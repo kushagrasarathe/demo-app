@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
   const [input, setInput] = useState("");
   const ref = useRef();
 
@@ -53,10 +52,10 @@ function App() {
     console.log("changeToH3 clicked");
   }
 
-  // function getInitialState() {
-  //   const value = "";
-  //   return value;
-  // }
+  function getInitialState() {
+    const value = "";
+    return value;
+  }
 
   // const [value, setValue] = useState(getInitialState);
   // const [style, setStyle] = useState("Text");
@@ -82,13 +81,12 @@ function App() {
 
   //   changeBlockType(e);
 
-  //   // console.log('changed')
   // }
 
-  // align text
-
+  
   // const [align, setAlign] = useState("");
-
+  
+  // align text
   function setStart() {
     console.log("start clicked");
     ref.current.classList.toggle("start");
@@ -108,13 +106,13 @@ function App() {
     <div className="App ">
       <div className="container mt-5 ">
         <h1 className="text-center">Welcome to Demo App</h1>
-        <form className="m-3">
+
+        
+        <div className="m-3">
           <div className="form-group row text-center">
             <h4 className="mt-4 mb-4">Enter text below</h4>
-            
-            <input ref={ref} value={input} onChange={onChnageHandler} />
 
-            
+            <input ref={ref} value={input} onChange={onChnageHandler} />
           </div>
 
           <div className="text-center mt-5 mb-2">
@@ -122,7 +120,6 @@ function App() {
           </div>
 
           <div className="flex col m-2 text-center">
-
             <div className="mb-3">
               <button className="btn  btn-info m-3" onClick={changeToText}>
                 Text
@@ -138,7 +135,7 @@ function App() {
               </button>
             </div>
 
-           {/* <div className="mb-2">
+            {/* <div className="mb-2">
            <select className="w-25 text-center bg-light" value={value} onChange={handleChange}>
               <option value="Text">Text</option>
               <option value="Heading1">Heading 1</option>
@@ -146,7 +143,6 @@ function App() {
               <option value="Heading3">Heading 3</option>
             </select>
            </div> */}
-
           </div>
 
           <div className="text-center mt-5 mb-2">
@@ -183,10 +179,12 @@ function App() {
               End
             </button>
           </div>
-        </form>
-      </div>
 
-      
+
+        </div>
+
+
+      </div>
     </div>
   );
 }
