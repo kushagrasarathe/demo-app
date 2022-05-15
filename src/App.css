@@ -3,7 +3,7 @@
 */
 
 
-button {
+/* button {
   cursor: pointer;
   margin-top: 30px;
   width: 100px;
@@ -15,7 +15,7 @@ button {
   color: #212121;
   font-weight: 600;
   box-shadow: 2px 4px 8px rgba(45, 87, 5, 0.247);
-}
+} */
 
 input {
   margin: 25px;
@@ -96,4 +96,8 @@ input {
 
 .end {
   text-align: right;
+}
+
+.sidebar {
+  
 }
